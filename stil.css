@@ -1,0 +1,263 @@
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Roboto', Candara, sans-serif;
+  font-size: 90%;
+  margin: 1%;
+  position: relative;
+}
+
+header {
+  color: #ffffff;
+  background-color: #008231;
+  text-align: left;
+  padding-left: 1%;
+  padding-bottom: 0.1%;
+  padding-top: 0.1%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.presl {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+}
+
+.presl a {
+  color: yellow;
+  text-decoration: none;
+  font-size: 130%;
+  padding: 5px;
+  font-weight: bold;
+}
+
+main {
+  background-color: #ffffff;
+  margin-top: 0.1%;
+  margin-bottom: 0.2%;
+  color: #008231;
+}
+
+.topnav {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  padding: 0;
+  max-width: 100%;
+  text-align: right;
+}
+
+.topnav li {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.topnav li a {
+  display: block;
+  color: #008231;
+  text-align: left;
+  padding: 12px 5px;
+  text-decoration: none;
+}
+
+.topnav li:hover {
+  background-color: #ededeb;
+}
+
+.dropdown, .dropdown2, .dropdown3, .dropdown4 {
+  display: inline-block;
+  background-color: inherit;
+  margin: 0;
+}
+
+.dropa, .dropa2, .dropa3, .dropa4 {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.dropdown-content, .dropdown-content2, .dropdown-content3, .dropdown-content4 {
+  display: none;
+  position: absolute;
+  text-align: left;
+  width: 300px;
+  background-color: #f3f3f3;
+  margin: 0;
+  z-index: 1;
+}
+
+.dropdown-content li, .dropdown-content2 li, .dropdown-content3 li, .dropdown-content4 li {
+  float: left;
+  width: 100%;
+}
+
+.dropdown-content li a, .dropdown-content2 li a, .dropdown-content3 li a, .dropdown-content4 li a {	
+  margin-left: 0;
+  list-style-type: none;
+  opacity: 2;
+}
+
+#myDropdown, #myDropdown2, #myDropdown3, #myDropdown4 {
+  padding-left: 0.1%;
+}
+
+.show {
+  display: block;
+}
+
+#odsek1 {
+  margin-left: 2%;
+}
+
+#odsek2 {
+  margin-left: 2%
+}
+
+.poslovi {
+  float: left;
+  width: 30%;
+  margin-top: 1%;
+  animation: moveDown 3s ease-in-out forwards;
+  opacity: 0;
+  z-index: -1;
+}
+
+#posl {
+  list-style-type: none;
+}
+
+#posl li {
+  padding-top: 10px;
+}
+
+.gmap {
+  animation: moveDown 6s ease-in-out forwards;
+  opacity: 0;
+  z-index: -1;
+  margin-top: 2%;
+  margin-left: 5%;
+  float: left;
+  width: 30%;
+}
+
+.gmap iframe {
+  margin-top: 2%;
+  width: 100%;
+}
+
+.kontakt-forma {
+  float: left;
+  width: 30%;
+  animation: moveDown 9s ease-in-out forwards;
+  opacity: 0;
+  z-index: -1;
+  margin-left: 5%;
+  margin-top: 1%;
+}
+
+#pisite {
+  font-family: cursive;
+  font-style: italic;
+}
+
+#nadjite {
+  font-weight: bold;
+}
+
+form input, form textarea {
+  border: 0;
+  margin: 10px 0;
+  padding: 10px;
+  outline: none;
+  background-color: #f3f3f3;
+}
+
+form button {
+  padding: 10px;
+  background-color: #008231;
+  color: white;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  width: 140px;
+  margin: 5% 115px;
+  margin-bottom: 23%;
+  border-radius: 5px;
+}
+
+form button:hover {
+  background-color: darkgreen;
+}
+
+#adresa, #brtel, #mail {
+  text-align: right;
+  margin-right: 1%;
+}
+
+@media screen and (max-width: 640px) {
+  .topnav li {display: block; text-align: center;}
+  .topnav li a {float: none; text-align: center;} 
+  .dropdown, .dropdown2, .dropdown3, .dropdown4 {display: block; padding: 0;}
+  .dropdown-content, .dropdown-content2, .dropdown-content3, .dropdown-content4 {width: 100%;}
+  .poslovi {width: 80%; margin-left: 5%;}
+  .gmap {width: 70%; margin-left: 10%;}
+  .kontakt-forma {width: 70%; margin-left: 10%;}
+  header {font-size: 80%; text-align: center;}
+  #adresa, #brtel, #mail {text-align: center;}
+  #odsek1, #odsek2 {text-align: center;}
+  form button {margin-bottom: 10%;}
+  footer {font-size: 70%;}
+  .presl a {font-size: 100%;}
+}
+
+@media screen and (max-width: 1007px) and (min-width: 641px) {
+  .topnav {columns: 2;}
+  .topnav li {display: block; text-align: center;}
+  .topnav li a {float: none; text-align: center;} 
+  .dropdown, .dropdown2, .dropdown3, .dropdown4 {display: block; padding: 0;}
+  .dropdown-content, .dropdown-content2, .dropdown-content3, .dropdown-content4 {width: inherit; position: relative;}
+  .poslovi {width: 80%; margin-left: 5%;}
+  .gmap {width: 38%; margin-left: 10%;}
+  .kontakt-forma {width: 35%; margin-left: 10%;}
+  header {font-size: 80%; text-align: center;}
+  #adresa, #brtel, #mail {text-align: center;}
+  #odsek1, #odsek2 {text-align: center;}
+  footer {font-size: 70%;}
+  .presl a {font-size: 115%;}
+}
+
+footer {
+  clear: left;
+  color: #ffffff;
+  background-color: #008231;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-size: 80%;
+  padding: 0.3%;
+}
+
+.maillink, .tellink {
+  color: white;
+  text-decoration: none;
+}
+
+#kraj {
+  text-align: center;
+}
+
+.disclaimer {
+  display: none;
+}
+
+@keyframes moveDown {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+	transform: translateY(0);
+	opacity: 1;
+  }
+}

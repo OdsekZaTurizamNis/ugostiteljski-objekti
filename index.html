@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="kategorizacija ugostiteljskih objekata niš, категоризација угоститељских објеката ниш">
+    <meta name="description" content="ГРАД НИШ, Одсек за туризам">
+    <title>ГРАД НИШ Одсек за туризам</title>
+    <link rel="icon" type="image/x-icon" href="slike/grb.jpg">
+	<link rel="stylesheet" href="stil.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto&display=swap" rel="stylesheet"> 
+	<script src="https://kit.fontawesome.com/df8b4613e7.js" crossorigin="anonymous"></script>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>	
+	<script src="jscript.js"></script>
+	<script src="cyrlatconverter.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>ГРАД НИШ</h1>
+      <h2>ГРАДСКА УПРАВА ЗА ИМОВИНУ И ОДРЖИВИ РАЗВОЈ</h2>
+	  <div class="presl">
+	    <a href="#" class="cyr">ЋИР</a>
+        <a href="#" class="lat">LAT</a>
+	  </div>
+	  <script>	  
+        var CyrLat = new CyrLatConverter('body').init({
+          onClickCyr: '.cyr',
+          onClickLat: '.lat',
+		  ignoreClasses: ['cyr', 'lat', 'covid', 'email', 'maillink']
+        });
+	  </script>
+	</header>
+    <main>
+	  <div class="topnav">
+	    <ul class="dropdown">
+	      <li><a class="dropa" onclick="myFunction()">Актуелно&nbsp;&nbsp;<i class="fas fa-chevron-down" style="pointer-events: none;"></i></a>
+		    <ul class="dropdown-content" id="myDropdown">
+		      <li><a class="covid" href="https://covid19.rs/" target="_blank">COVID 19</a></li>
+			  <li><a href="https://www.eturista.gov.rs/" target="_blank">еТуриста</a></li>
+		      <li><a href="https://mtt.gov.rs/tekst/29693/vauceri-za-odmor-u-srbiji.php" target="_blank">Ваучери за одмор у Србији</a></li>
+		    </ul>
+		  </li>
+		</ul>
+		<ul class="dropdown2">
+		  <li><a class="dropa2" onclick="myFunction2()">Закони и прописи&nbsp;&nbsp;<i class="fas fa-chevron-down" style="pointer-events: none;"></i></a>
+		    <ul class="dropdown-content2" id="myDropdown2">
+		      <li><a href="https://www.pravno-informacioni-sistem.rs/SlGlasnikPortal/eli/rep/sgrs/skupstina/zakon/2019/17/7/reg" target="_blank">Закон о туризму</a></li>
+		      <li><a href="https://www.pravno-informacioni-sistem.rs/SlGlasnikPortal/eli/rep/sgrs/skupstina/zakon/2019/17/6/reg" target="_blank">Закон о угоститељству</a></li>
+			  <li><a href="http://www.pravno-informacioni-sistem.rs/SlGlasnikPortal/eli/rep/sgrs/vlada/uredba/2019/47/1/reg" target="_blank">Уредба - боравишна такса за физичко лице</a></li>
+			  <li><a href="https://www.pravno-informacioni-sistem.rs/SlGlasnikPortal/eli/rep/sgrs/ministarstva/pravilnik/2019/45/2/reg" target="_blank">Правилник - угоститељске услуге - опорезивање</a></li>
+			  <li><a href="https://www.paragraf.rs/propisi/pravilnik-standardima-kategorizaciju-ugostiteljskih-objekata-smestaj.html" target="_blank">Правилник - стандарди за категоризацију угост. објеката</a></li>
+			  <li><a href="https://www.pravno-informacioni-sistem.rs/SlGlasnikPortal/eli/rep/sgrs/ministarstva/pravilnik/2010/41/4/reg" target="_blank">Правилник - минимални технички и санитарно-хигијенски услови</a></li>
+              <li><a href="http://www.pravno-informacioni-sistem.rs/SlGlasnikPortal/eli/rep/sgrs/ministarstva/pravilnik/2019/90/5/reg" target="_blank">Правилник - пријава некатегорисаног угост. објекта</a></li> 
+		    </ul>
+		  </li>
+	    </ul>
+	  	<ul class="dropdown3">
+		  <li><a class="dropa3" onclick="myFunction3()">Категорисани угоститељски објекти&nbsp;&nbsp;<i class="fas fa-chevron-down" style="pointer-events: none;"></i></a>
+		    <ul class="dropdown-content3" id="myDropdown3">
+		      <li><a href="dokumenti/InfOKateg.pdf" target="_blank">Информатор о категоризацији</a></li>
+		      <li><a href="dokumenti/PodnZahtKatDokFizLice.pdf" target="_blank">Подношење захтева за категоризацију - физичко лице</a></li>
+			  <li><a href="dokumenti/PodnZahtKatDokPrLice.pdf" target="_blank">Подношење захтева за категоризацију - правно лице</a></li>
+			  <li><a href="dokumenti/VodicKatFizLice.pdf" target="_blank">Водич - категоризација - физичко лице</a></li>
+			  <li><a href="dokumenti/VodicKatPrLice.pdf" target="_blank">Водич - категоризација - правно лице</a></li>
+			  <li><a href="dokumenti/Obrazac1FizLice.pdf" target="_blank">Изјава - Образац 1 - физичко лице</a></li>
+              <li><a href="dokumenti/Obrazac2PrLice.pdf" target="_blank">Изјава - Образац 2 - правно лице</a></li>
+              <li><a href="dokumenti/InfFizLicaBorTaksa.pdf" target="_blank">Боравишна такса за физичка лица - инфо</a></li>
+		      <li><a href="https://www.gu.ni.rs/gradska-uprava/gradska-uprava-grada-nisa/sekretarijat-za-lokalnu-poresku-administraciju/" target="_blank">Уплата боравишне таксе - инфо</a></li>
+			  <li><a href="dokumenti/ParamZaUplatuBorTaksa.pdf" target="_blank">Боравишна такса - параметри за уплату</a></li>
+			  <li><a href="dokumenti/ObavFizLicaOporez.pdf" target="_blank">Опорезивање - физичка лица</a></li>
+			  <li><a href="dokumenti/PoreskaPrijava.pdf" target="_blank">Пореска пријава</a></li>
+			  <li><a href="https://www.privredni-imenik.com/Imenik/PORESKA-UPRAVA-MINISTARSTVA-FINANSIJA-REPUBLIKE-SRBIJE-59608/" target="_blank">Уплата пореза на приход по основу пружања угоститељских услуга</a></li>
+			  <li><a href="dokumenti/Saglasnost.pdf" target="_blank">Сагласност сувласнику/члану породичног домаћинства</a></li>
+              <li><a href="dokumenti/PodnZahtPrestKatDok.pdf" target="_blank">Подношење захтева за престанак важења решења</a></li>
+			  <li><a href="dokumenti/ZahtZaPrestVazResFizLice.pdf" target="_blank">Захтев угоститеља-физичког лица за престанак важења решења</a></li>
+			  <li><a href="dokumenti/ZahtZaPrestVazResPrLice.pdf" target="_blank">Захтев угоститеља-правног лица за престанак важења решења</a></li>
+              <li><a href="dokumenti/PosebanRacun.docx">Посебан рачун</a></li>
+		    </ul>
+		  </li>
+		</ul>
+		<ul class="dropdown4">
+		  <li><a class="dropa4" onclick="myFunction4()">Некатегорисани угоститељски објекти&nbsp;&nbsp;<i class="fas fa-chevron-down" style="pointer-events: none;"></i></a>
+		    <ul class="dropdown-content4" id="myDropdown4">
+		      <li><a href="dokumenti/Prilog1.xlsx">Прилог 1 - Пријава угоститеља за некатегор. угост. објекат</a></li>
+		      <li><a href="dokumenti/ZahtUverNekateg.pdf" target="_blank">Захтев за издавање уверења</a><li>
+			  <li><a href="dokumenti/TakseNekateg.pdf" target="_blank">Таксе</a><li>
+			  <li><a href="dokumenti/ParamZaUplatuBorTaksaNekateg.pdf" target="_blank">Боравишна такса - параметри за уплату</a></li>
+			  <li><a href="dokumenti/ZahtZaBrisIzEvidNekateg.pdf" target="_blank">Захтев за брисање из евиденције</a></li>			 
+		    </ul>
+		  </li>
+		</ul>
+	  </div>
+	  <div class="poslovi">
+	    <h3 id="odsek1">ОДСЕК ЗА</h3>
+	    <h3 id="odsek2"><i class="fas fa-suitcase"></i>&nbsp;&nbsp;ТУРИЗАМ И РОБНЕ РЕЗЕРВЕ&nbsp;&nbsp;<i class="fas fa-shopping-bag"></i></h3>
+	    <ul id="posl">
+          <li>- Управни надзор над законитошћу рада и аката организација у области туризма чији је оснивач Град</li>
+          <li>- Прикупљање и обрада података за израду стратегија, програма, планова и пројеката развоја туризма</li>
+          <li>- Категоризација Града као туристичког места</li>
+		  <li>- Израда нацрта одлуке о боравишној такси</li>
+		  <li>- Вођење управног поступка</li>
+		  <li>- Категоризација објеката приватног смештаја, вођење евиденције о категорисаном смештају и достава података, у складу са законом</li>
+		  <li>- Израда нацрта општих и појединачних аката које доносе Скупштина и извршни органи Града</li>
+        </ul>
+	  </div>
+      <div class="gmap">
+	    <p id="nadjite">Потражите нас... у центру</p>
+	    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2902.805800847748!2d21.894756815644786!3d43.31832458203797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4755b0b110cc383b%3A0xe642fd127d3ea21c!2zTmlrb2xlIFBhxaFpxIdhIDI0LCBOacWhIDcwMDE4Mw!5e0!3m2!1sen!2srs!4v1643116454409!5m2!1sen!2srs" width="500" height="270" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+	  </div>
+	  <div class="kontakt-forma"><br>
+	    <p id="pisite">Пишите нам</p>
+		<form action="https://formsubmit.co/info.privreda.nis@gmail.com" method="POST">
+		  <input type="text" name="ime" placeholder="Име" size="30" required><br>
+		  <input class="email" type="email" name="email" placeholder="Email" size="30" required><br>
+		  <textarea name="poruka" rows="10" cols="31" placeholder="Порука" required></textarea><br>
+		  <button type="submit">Пошаљите поруку</button><br>
+		</form>
+	  </div>
+	</main>
+	<footer>
+	  <p id="adresa"><i class="fas fa-home"></i>&nbsp;&nbsp;Ниш, Николе Пашића 24, 4. спрат, канцеларија 128А</p>
+	  <p id="brtel"><i class="fas fa-phone"></i>&nbsp;&nbsp;<a class="tellink" href="tel:+38118504454">+381 18 504454</a>&nbsp;,&nbsp;<a class="tellink" href="tel:+38118504650">+381 18 504650</a></p>
+	  <p id="mail"><i class="far fa-envelope"></i>&nbsp;&nbsp;<a class="maillink" href="mailto:privreda@gu.ni.rs">privreda@gu.ni.rs</a>&nbsp;,&nbsp;<a class="maillink" href="mailto:info.privreda.nis@gmail.com">info.privreda.nis@gmail.com</a></p><br>
+      <p id="kraj">&copy; Град Ниш, Одсек за туризам и робне резерве 2022</p> 
+    </footer>
+              
+  </body>
+</html>
